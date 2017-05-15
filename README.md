@@ -6,11 +6,11 @@
   sudo docker run -d --name postfix-forward -p 25 \
     -e FORWARDED_DOMAINS=example.com \
     -e FORWARD_TO=foo@bar.com \
-    cizar/postfix-forward
+    cizar/docker-postfix-forward
 ```
 
 ## Build
 
 ```
-  sudo docker build -t postfix-forward .
+  sudo docker build -t docker-postfix-forward .
 ```
